@@ -42,8 +42,10 @@
 
 .post-content {
     font-size: 25px;
+    padding: 50px;
 }
 
 .read-post {
-    font-size: 20px;
+    font-size: 20px
+    ;
 }
