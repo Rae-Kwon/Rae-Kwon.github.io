@@ -21,6 +21,8 @@
 .blog-image-container {
     width: 100vw;
     height: 65vh;
+    text-align: center;
+    position: relative;
 }
 
 .blog-image {
