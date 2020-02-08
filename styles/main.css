@@ -18,6 +18,11 @@
     justify-content: space-around;
 }
 
+.blog-image-container {
+    width: 100vw;
+    height: 65vh;
+}
+
 .blog-image {
     width: 100vw;
     height: 65vh;
