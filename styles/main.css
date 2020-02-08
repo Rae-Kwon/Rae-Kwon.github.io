@@ -16,6 +16,9 @@
     display: flex;
     width: 900px;
     justify-content: space-around;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #posts {
