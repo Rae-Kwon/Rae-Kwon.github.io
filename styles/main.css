@@ -18,6 +18,11 @@
     justify-content: space-around;
 }
 
+.blog-image {
+    width: 100vw;
+    height: 60vh;
+}
+
 #posts {
     display: flex;
     height: 100%;
