@@ -5,20 +5,28 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: rgb(218, 224, 230);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .header-container {
-    background-color: blue;
+    background-color: white;
     display: flex;
     justify-content: center;
-    padding: 40px 0;
-    height: 130px;
+    padding: 10px 0;
 }
 
 .header {
     display: flex;
     width: 900px;
     justify-content: space-around;
-    font-size: 40px;
-    color: white;
+    font-size: 20px;
+    color: black;
 }
 
 #posts {
@@ -33,25 +41,24 @@
 .post {
     position: relative;
     margin: 30px;
-    border: 2px solid black;
+    border: 1px solid rgb(204, 204, 204);
     width: 50vw;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.post:hover {
+    border: 1px solid black;
 }
 
 .post-header {
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
-    left: 20px;
+    left: 40px;
+    top: 20px;
 }
 
 .post-content {
-    font-size: 25px;
-    padding: 50px;
-}
-
-.read-post {
-    font-size: 20px;
-    text-align: right;
-    position: relative;
-    bottom: 20px;
-    right: 40px;
+    font-size: 16px;
+    padding: 40px;
 }
