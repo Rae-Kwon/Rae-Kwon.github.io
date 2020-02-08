@@ -77,4 +77,10 @@ a {
     margin-top: 107px;
     position: relative;
     left: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.github-logo {
+    padding-top: 20px;
 }
