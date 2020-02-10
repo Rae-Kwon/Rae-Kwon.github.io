@@ -54,7 +54,7 @@ a {
     padding: 40px;
 }
 
-.post:hover {
+.available:hover {
     border: 1px solid black;
 }
 
@@ -74,10 +74,10 @@ a {
     background-color: white;
     width: 200px;
     height: 300px;
-    margin-top: 107px;
-    position: relative;
-    left: 40px;
+    position: fixed;
     text-align: center;
+    left: 75%;
+    top: 20%;
     padding-top: 50px;
 }
 
