@@ -7,21 +7,61 @@
   </head>
   
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
-    
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
-    
-    <!-- this is a comment. -->
-  
+    <div id="header-container">
+      <div class="header">
+        Blog Home
+      </div>
+    </div>
+
+    <div id="page-container">
+      <div id="menu">
+        <ul>
+          <li>Introduction</li>
+          <li>Intro to Classes</li>
+          <li>Classes Explained</li>
+          <li>Intro to IDs</li>
+          <li>IDs Explained</li>
+          <li>Differences and Similarities between Classes and IDs</li>
+          <li>Conclusion</li>
+        </ul>
+      </div>
+      <div class="post">
+        <h1>Classes vs IDs and when to use them</h1>
+        <div id="intro"> While learning web development you may have come across classes and IDs. When you type out some HTML and use these classes and IDs you might notice that they both do the same thing when you go to style it in a CSS file. You might be able to use classes and IDs interchangeably on a simple website with only a few div containers, but when you are working with a bigger website, the browser might not be so kind as to let you use them any way you want. So what is the difference between a class and and ID, and what are the best practices in using them?
+          <br>
+          <br>
+        </div>
+
+        <div id="class-example"> Imagine you are looking for a new computer. You come across one you like and proceed to check it out. During checkout the cashier will scan a barcode which will give information such as the price. Now, if you go and get another laptop of the same brand and model, the price will be the exact same and so will the barcode. 
+          <br>
+          <br>
+        </div>
+
+        <div id="class-explanation"> You can think of classes like product barcodes, it holds the same price for all computers with that barcode. A company can also update the price of all computers under that barcode without having to double check every single computer’s barcode and manually change its price. Putting a barcode on the product is like adding classes to HTML tags. Adjusting the price on all 100 or 1000 of those computers is like adjusting the CSS rules to all HTML tags with that class name.
+          <br>
+          <br>
+        <div>
+
+        <div id="id-example"> Now that you’ve bought your imaginary computer and have an idea of what a class is, you bring it home and immediately it is faulty. You contact the manufacturer as instructed and they ask for a serial number. The serial number that you would provide doesn’t contain information like price, but it will have information that will be specific to that computer that you have bought, like date of production and warranty information. In other words the serial number is unique.
+          <br>
+          <br>
+        </div>
+
+        <div id="id-explanation"> Just like how a serial number is unique to a specific product, an ID is unique to a tag on a website, it should ideally only be used once. If a manufacturer had 2 computers with the same serial number, then they may not be able to tell whether it is still under warranty creating a whole host of problems.
+          <br>
+          <br>
+        </div>
+
+        <div id="class-id-difference"> This is what differentiates itself from a class. You can attach multiple classes to tags and change all the styling at once, but you cannot do the same to an ID as there should only be one unique ID per page. An ID can also allow for a programmer to add jumps to specific areas of a page. If there were two IDs with the same name, then the browser would get confused and the link might not work as intended. This would be like how having two computers with the same serial numbers might confuse a manufacturer causing delays in getting your computer fixed through the warranty.
+          <br>
+          <br>
+        </div>
+
+        <div id="conclusion"> A class and an ID may have the same functionality, but they have some big differences. Like barcodes, classes can be used multiple times and can give wholesale changes to a bunch of different elements. Conversely, serial numbers are unique and so are IDs. You should not use more that one ID on a page as it can make some functions like jumping to areas of a page redundant.
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
