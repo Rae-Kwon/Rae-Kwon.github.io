@@ -5,16 +5,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    background-color: rgb(218, 224, 230);
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
-.header-container {
+#header-container {
     background-color: white;
     display: flex;
     padding: 10px 0;
@@ -34,6 +30,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: rgb(218, 224, 230);
 }
 
 #posts {
@@ -74,7 +71,7 @@ a {
     background-color: white;
     width: 200px;
     height: 300px;
-    position: fixed;
+    position: absolute;
     text-align: center;
     left: 75%;
     top: 20%;
@@ -83,4 +80,13 @@ a {
 
 .github-logo {
     padding-top: 20px;
+}
+
+#footer-container {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.footer {
+    text-align: center;
 }
