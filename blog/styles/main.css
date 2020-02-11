@@ -31,9 +31,19 @@
     background-color: rgb(218, 224, 230);
 }
 
+#table-of-contents {
+    position: fixed;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    left: 17%;
+    top: 140px;
+}
+
 .post {
-    position: relative;
-    margin: 60px 0px 60px 60px;
+    margin: 140px 0px 60px 60px;
     border: 1px solid rgb(204, 204, 204);
     width: 40vw;
     border-radius: 5px;
@@ -56,4 +66,8 @@ ul {
     left: 75%;
     top: 140px;
     padding-top: 50px;
+}
+
+.github-logo {
+    padding-top: 20px;
 }
