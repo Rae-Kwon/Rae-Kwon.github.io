@@ -85,3 +85,12 @@ h1 {
 .github-logo {
     padding-top: 20px;
 }
+
+#footer-container {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.footer {
+    text-align: center;
+}
