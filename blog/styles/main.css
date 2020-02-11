@@ -40,6 +40,12 @@
     height: 300px;
     left: 17%;
     top: 140px;
+    padding: 20px;
+}
+
+.contents {
+    margin-left: 15px;
+    padding-top: 10px;
 }
 
 .post {
@@ -49,10 +55,6 @@
     border-radius: 5px;
     background-color: white;
     padding: 40px;
-}
-
-ul {
-    list-style-type: none;
 }
 
 #menu {
