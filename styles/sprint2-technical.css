@@ -20,7 +20,7 @@ a:hover {
     padding: 10px 0;
     position: fixed;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header {
@@ -35,20 +35,19 @@ a:hover {
 #page-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     background-color: rgb(218, 224, 230);
+    padding-right: 50px;
 }
 
 #table-of-contents {
-    position: fixed;
+    width: 80vw;
+    position: relative;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     background-color: white;
-    width: 200px;
-    height: 300px;
-    left: 17%;
-    top: 17%;
+    top: 90px;
+    left: 13px;
     padding: 20px;
 }
 
@@ -69,9 +68,9 @@ pre {
 
 .code {
     background: #272822; 
-    overflow:auto;
-    width:auto;
-    border:solid gray;
+    overflow: auto;
+    width: auto;
+    border: solid gray;
     border-width:.1em .1em .1em .8em;
     padding:.2em .6em;
 }
@@ -92,10 +91,20 @@ figcaption {
     text-align: center;
 }
 
+.barcode {
+    text-align: center;
+    width: 75vw;
+}
+
+.serial-no {
+    text-align: center;
+    width: 75vw;
+}
+
 #post {
     margin: 140px 0px 60px 60px;
     border: 1px solid rgb(204, 204, 204);
-    width: 40vw;
+    width: 90vw;
     border-radius: 5px;
     background-color: white;
     padding: 40px;
@@ -106,23 +115,33 @@ h1 {
 }
 
 #menu {
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     background-color: white;
-    width: 200px;
-    height: 300px;
-    position: absolute;
+    width: 90vw;
+    height: 200px;
+    position: relative;
     text-align: center;
-    left: 75%;
-    top: 140px;
-    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+    margin-bottom: 60px;
+}
+
+.github-mark {
+    position: absolute;
+    left: 5%;
 }
 
 .github-logo {
-    padding-top: 20px;
+    position: absolute;
+    right: 5%;
 }
 
 #footer-container {
+    height: 20px;
     background-color: white;
     padding: 10px 0;
 }
@@ -142,4 +161,72 @@ html, body {
 a.home {
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (min-width: 768px) {
+/* For Desktop */
+    #page-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(218, 224, 230);
+        top: 0;
+    }
+
+    #table-of-contents {
+        position: fixed;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        left: 5vw;
+        top: 140px;
+        padding: 20px;
+    }
+
+    #post {
+        margin: 140px 0px 60px 60px;
+        border: 1px solid rgb(204, 204, 204);
+        width: 40vw;
+        border-radius: 5px;
+        background-color: white;
+        padding: 40px;
+    }
+
+    .barcode {
+        width: 34vw;
+    }
+    
+    .serial-no {
+        width: 34vw;
+    }
+
+    #menu {
+        flex-direction: column;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        text-align: center;
+        left: 75%;
+        top: 140px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin-bottom: 0;
+    }
+
+    .github-mark {
+        position: relative;
+        left: 0;
+    }
+    
+    .github-logo {
+        position: relative;
+        right: 0;
+    }
 }
