@@ -56,6 +56,41 @@ a:hover {
     padding-top: 10px;
 }
 
+figure {
+    padding: 40px 0 60px 0;
+}
+
+pre {
+    margin: 0; 
+    line-height: 125%;
+    color: white;
+}
+
+.code {
+    background: #272822; 
+    overflow:auto;
+    width:auto;
+    border:solid gray;
+    border-width:.1em .1em .1em .8em;
+    padding:.2em .6em;
+}
+
+.tag {
+    color: #f92672
+}
+
+.attribute {
+    color: #a6e22e
+}
+
+.value {
+    color: #e6db74
+}
+
+figcaption {
+    text-align: center;
+}
+
 #post {
     margin: 140px 0px 60px 60px;
     border: 1px solid rgb(204, 204, 204);
