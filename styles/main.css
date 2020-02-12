@@ -91,12 +91,12 @@ a {
 
 .github-mark {
     position: absolute;
-    left: 20%;
+    left: 5%;
 }
 
 .github-logo {
     position: absolute;
-    right: 20%;
+    right: 5%;
 }
 
 #footer-container {
@@ -110,7 +110,7 @@ a {
 
 .to-top {
     position: fixed;
-    left: 90%;
+    left: 80%;
     bottom: 6%;
 }
 
