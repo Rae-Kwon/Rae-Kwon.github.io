@@ -9,39 +9,33 @@
   <body>
     <div id="header-container">
       <div class="header">
-        Blog Home
+        <a class="home" href="../index.html">Blog Home</a>
       </div>
     </div>
 
     <div id="page-container">
       <div id="table-of-contents">
         <ul>
-          <a href="#intro">
-            <li class="contents">Introduction</li>
+          <a href="#head" class="anchor">
+            <li class="contents">Classes vs IDs</li>
           </a>
-          <a href="#class-example">
-            <li class="contents">Intro to Classes</li>
+          <a href="#classes" class="anchor">
+            <li class="contents">Classes</li>
           </a>
-          <a href="#class-explanation">
-            <li class="contents">Classes Explained</li>
+          <a href="#ids" class="anchor">
+            <li class="contents">IDs</li>
           </a>
-          <a href="#id-example">
-            <li class="contents">Intro to IDs</li>
+          <a href="#differences" class="anchor">
+            <li class="contents">So What's So Different About Them?</li>
           </a>
-          <a href="#id-explanation">
-            <li class="contents">IDs Explained</li>
-          </a>
-          <a href="#class-id-difference">
-            <li class="contents">Differences and Similarities between Classes and IDs</li>
-          </a>
-          <a href="#conclusion">
-            <li class="contents">Conclusion</li>
+          <a href="#conclusion" class="anchor">
+            <li class="contents">One Last Thing</li>
           </a> 
         </ul>
       </div>
       
       <div id="post">
-        <h1>Classes vs IDs and when to use them</h1>
+        <h1 id="head">Classes vs IDs and when to use them</h1>
         <div id="intro"> While learning web development you may have come across classes and IDs. When you type out some HTML and use these classes and IDs you might notice that they both do the same thing when you go to style it in a CSS file. You might be able to use classes and IDs interchangeably on a simple website with only a few div containers, but when you are working with a bigger website, the browser might not be so kind as to let you use them any way you want. So what is the difference between a class and and ID, and what are the best practices in using them?
           <br>
           <br>
@@ -76,31 +70,46 @@
           <figcaption>An example of how IDs and Classes can be used.</figcaption>
         </figure>
 
+        <h2 id="classes">Classes</h2>
         <div id="class-example"> Imagine you are looking for a new computer. You come across one you like and proceed to check it out. During checkout the cashier will scan a barcode which will give information such as the price. Now, if you go and get another laptop of the same brand and model, the price will be the exact same and so will the barcode. 
           <br>
           <br>
         </div>
+        
+
+        <figure>
+          <img src="../images/barcode.png" alt="Barcode example" width="700px">
+          <figcaption>Like a barcode, a class can used multiple times and affects multiple items, or in this case elements.</figcaption>
+        </figure>
 
         <div id="class-explanation"> You can think of classes like product barcodes, it holds the same price for all computers with that barcode. A company can also update the price of all computers under that barcode without having to double check every single computer’s barcode and manually change its price. Putting a barcode on the product is like adding classes to HTML tags. Adjusting the price on all 100 or 1000 of those computers is like adjusting the CSS rules to all HTML tags with that class name.
           <br>
           <br>
         </div>
 
+        <h2 id="ids" class="no-image-head">IDs</h2>
         <div id="id-example"> Now that you’ve bought your imaginary computer and have an idea of what a class is, you bring it home and immediately it is faulty. You contact the manufacturer as instructed and they ask for a serial number. The serial number that you would provide doesn’t contain information like price, but it will have information that will be specific to that computer that you have bought, like date of production and warranty information. In other words the serial number is unique.
           <br>
           <br>
         </div>
+
+        <figure>
+          <img src="../images/SerialNo.jpg" alt="Serial Number Example">
+          <figcaption>Serial Numbers are unique, just like IDs.</figcaption>
+        </figure>
 
         <div id="id-explanation"> Just like how a serial number is unique to a specific product, an ID is unique to a tag on a website, it should ideally only be used once. If a manufacturer had 2 computers with the same serial number, then they may not be able to tell whether it is still under warranty creating a whole host of problems.
           <br>
           <br>
         </div>
 
+        <h2 id="differences" class="no-image-head">So What's So Different About Them?</h2>
         <div id="class-id-difference"> This is what differentiates itself from a class. You can attach multiple classes to tags and change all the styling at once, but you cannot do the same to an ID as there should only be one unique ID per page. An ID can also allow for a programmer to add jumps to specific areas of a page. If there were two IDs with the same name, then the browser would get confused and the link might not work as intended. This would be like how having two computers with the same serial numbers might confuse a manufacturer causing delays in getting your computer fixed through the warranty.
           <br>
           <br>
         </div>
 
+        <h2 id="final-word" class="no-image-head">One Last Thing</h2>
         <div id="conclusion"> A class and an ID may have the same functionality, but they have some big differences. Like barcodes, classes can be used multiple times and can give wholesale changes to a bunch of different elements. Conversely, serial numbers are unique and so are IDs. You should not use more that one ID on a page as it can make some functions like jumping to areas of a page redundant.
           <br>
           <br>

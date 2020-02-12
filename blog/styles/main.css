@@ -7,12 +7,12 @@
 
 a {
     text-decoration: none;
-    color: black;
 }
 
-.home {
-    text-decoration: none;
+a:hover {
+    text-decoration: underline;
 }
+
 
 #header-container {
     background-color: white;
@@ -40,17 +40,60 @@ a {
     background-color: rgb(218, 224, 230);
 }
 
-#posts {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    flex-direction: column;
-    word-wrap: break-word;
+#table-of-contents {
+    position: fixed;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    left: 17%;
+    top: 140px;
+    padding: 20px;
 }
 
-.post {
-    position: relative;
-    margin: 60px 0px 60px 60px;
+.contents {
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+figure {
+    padding: 40px 0 60px 0;
+}
+
+pre {
+    margin: 0; 
+    line-height: 125%;
+    color: white;
+}
+
+.code {
+    background: #272822; 
+    overflow:auto;
+    width:auto;
+    border:solid gray;
+    border-width:.1em .1em .1em .8em;
+    padding:.2em .6em;
+}
+
+.tag {
+    color: #f92672
+}
+
+.attribute {
+    color: #a6e22e
+}
+
+.value {
+    color: #e6db74
+}
+
+figcaption {
+    text-align: center;
+}
+
+#post {
+    margin: 140px 0px 60px 60px;
     border: 1px solid rgb(204, 204, 204);
     width: 40vw;
     border-radius: 5px;
@@ -58,18 +101,8 @@ a {
     padding: 40px;
 }
 
-.available:hover {
-    border: 1px solid black;
-}
-
-.post-header {
-    font-size: 30px;
-    word-wrap: break-word;
+h1 {
     padding-bottom: 30px;
-}
-
-.post-content {
-    font-size: 16px;
 }
 
 #menu {
@@ -96,10 +129,4 @@ a {
 
 .footer {
     text-align: center;
-}
-
-.to-top {
-    position: fixed;
-    left: 79%;
-    bottom: 13%;
 }

@@ -13,6 +13,7 @@ a:hover {
     text-decoration: underline;
 }
 
+
 #header-container {
     background-color: white;
     display: flex;
@@ -47,13 +48,13 @@ a:hover {
     width: 200px;
     height: 300px;
     left: 17%;
-    top: 140px;
+    top: 17%;
     padding: 20px;
 }
 
 .contents {
     margin-left: 15px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 figure {
@@ -128,4 +129,17 @@ h1 {
 
 .footer {
     text-align: center;
+}
+
+html, body {
+    scroll-padding-top: 100px;
+}
+
+.no-image-head {
+    padding-top: 160px;
+}
+
+a.home {
+    text-decoration: none;
+    color: black;
 }
