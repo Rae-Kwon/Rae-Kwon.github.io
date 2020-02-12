@@ -52,10 +52,11 @@ a {
     position: relative;
     margin: 60px 0px 60px 60px;
     border: 1px solid rgb(204, 204, 204);
-    width: 100vw;
+    width: 90vw;
     border-radius: 5px;
     background-color: white;
     padding: 40px;
+    right: 25px;
 }
 
 .available:hover {
@@ -73,20 +74,29 @@ a {
 }
 
 #menu {
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     background-color: white;
-    width: 200px;
-    height: 300px;
-    position: absolute;
+    width: 90vw;
+    height: 200px;
+    position: relative;
     text-align: center;
-    left: 75%;
-    top: 140px;
-    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    left: 5px;
+    margin-bottom: 60px;
+}
+
+.github-mark {
+    position: absolute;
+    left: 20%;
 }
 
 .github-logo {
-    padding-top: 20px;
+    position: absolute;
+    right: 20%;
 }
 
 #footer-container {
@@ -100,8 +110,8 @@ a {
 
 .to-top {
     position: fixed;
-    left: 79%;
-    bottom: 13%;
+    left: 90%;
+    bottom: 6%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -115,4 +125,38 @@ a {
         background-color: white;
         padding: 40px;
     }
+
+    #menu {
+        flex-direction: column;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        text-align: center;
+        left: 75%;
+        top: 140px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin-bottom: 0;
+    }
+
+    .to-top {
+        position: fixed;
+        left: 79%;
+        bottom: 13%;
+    }
+
+    .github-mark {
+        position: relative;
+        left: 0;
+    }
+    
+    .github-logo {
+        position: relative;
+        right: 0;
+    }
+    
 }
