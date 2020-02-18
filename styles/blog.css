@@ -40,65 +40,15 @@ a:hover {
     padding-right: 50px;
 }
 
-#table-of-contents {
-    width: 80vw;
-    position: relative;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 5px;
-    background-color: white;
-    top: 90px;
-    left: 13px;
-    padding: 20px;
-}
-
-.contents {
-    margin-left: 15px;
-    padding-top: 20px;
+.image {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 figure {
     padding: 40px 0 60px 0;
-}
-
-pre {
-    margin: 0; 
-    line-height: 125%;
-    color: white;
-}
-
-.code {
-    background: #272822; 
-    overflow: auto;
-    width: auto;
-    border: solid gray;
-    border-width:.1em .1em .1em .8em;
-    padding:.2em .6em;
-}
-
-.tag {
-    color: #f92672
-}
-
-.attribute {
-    color: #a6e22e
-}
-
-.value {
-    color: #e6db74
-}
-
-figcaption {
     text-align: center;
-}
-
-.barcode {
-    text-align: center;
-    width: 75vw;
-}
-
-.serial-no {
-    text-align: center;
-    width: 75vw;
+    background-size: contain;
 }
 
 #post {
@@ -112,6 +62,7 @@ figcaption {
 
 h1 {
     padding-bottom: 30px;
+    word-wrap: inherit;
 }
 
 #menu {
@@ -150,13 +101,6 @@ h1 {
     text-align: center;
 }
 
-html, body {
-    scroll-padding-top: 100px;
-}
-
-.no-image-head {
-    padding-top: 160px;
-}
 
 a.home {
     text-decoration: none;
@@ -174,18 +118,6 @@ a.home {
         top: 0;
     }
 
-    #table-of-contents {
-        position: fixed;
-        border: 1px solid rgb(204, 204, 204);
-        border-radius: 5px;
-        background-color: white;
-        width: 200px;
-        height: 300px;
-        left: 5vw;
-        top: 140px;
-        padding: 20px;
-    }
-
     #post {
         margin: 140px 0px 60px 60px;
         border: 1px solid rgb(204, 204, 204);
@@ -193,14 +125,6 @@ a.home {
         border-radius: 5px;
         background-color: white;
         padding: 40px;
-    }
-
-    .barcode {
-        width: 34vw;
-    }
-    
-    .serial-no {
-        width: 34vw;
     }
 
     #menu {
@@ -218,6 +142,17 @@ a.home {
         justify-content: space-evenly;
         align-items: stretch;
         margin-bottom: 0;
+    }
+    
+    .image {
+        max-width: 100%;
+        max-height: 100%
+    }
+    
+    figure {
+        padding: 40px 0 60px 0;
+        text-align: center;
+        background-size: contain;
     }
 
     .github-mark {
