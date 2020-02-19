@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="../styles/blog.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="header-container">
+            <div class="header">
+              <a class="home" href="../index.html">Blog Home</a>
+            </div>
+        </div>
+
+        <div id="page-container">
+            <div id="post">
+                <h1 id="head">HTML, CSS, Javascript and DOM?</h1>
+
+                <figure>
+                    <img class="image" src="../images/html-css-js.png" alt="HTML, CSS and Javascript logos">
+                    <figcaption>HTML, CSS and Javascript.</figcaption>
+                </figure>
+                <div id="intro"> Webpages are made up of a whole lot of elements. HTML or Hyper Text Markup Language can be thought of like a house. It is the structure, the foundation. CSS or Cascading Style Sheets is like the decorative elements of the house like the painting, door style, furniture etc. Without the house you can’t decorate it and without the decorative elements your house will be empty and bland. Then there is Javascript. Continuing with the house analogy you can think of it like the electrical wiring and plumbing, it's there hidden but it is vital for living in the house and allows you to interact with lights and the shower.</div>
+                <br>
+                <br>
+
+                <h2>What's a Control Flow and what are Loops?</h2>
+                <div id="control-flow"> Control flow is the order of how statements, instructions or function calls are executed or evaluated. Loops are a form of control flow which takes a statement, instructions or function calls and iterates or goes through them until a flag/condition is met.
+                <br>
+                <br>
+
+                <figure>
+                    <img class="image" src="../images/For-loop-diagram.png" alt="A for loop showing a Control Flow">
+                    <figcaption>This is a For Loop diagram showing what a Control Flow is.
+                    </figcaption>
+                </figure>
+
+                You can think of a control flow like an average daily routine. You wake up then have to make a decision, do you brush your teeth first or eat breakfast. If your mouth is feeling extra dirty maybe you go and brush your teeth first. Then when you go to choose your breakfast do you choose the toast or toast and eggs? It would depend on how hungry you might be. You go to work and would make a bunch of decisions. Then you would head home, have dinner, relax and then go to sleep. This whole process then repeats itself the next day. Sometimes there is a breaking condition in which the control loop will stop. In the case of this analogy, the weekend might be a break in the control flow as a weekend routine is typically different to a weekday routine.
+                <br>
+                <br>
+
+                <figure>
+                    <img class="image" src="../images/flowchart_structure_loop.png" alt="Do while and while loop graphic">
+                    <figcaption>An example of a Do While Loop and a While Loop.</figcaption>
+                </figure>
+                
+                As for a loop you can think of the average daily routine analogy again. Why does the person go to sleep? The condition in this case would be a lack of energy/the person is tired. Like in the control flow analogy, you might break from the loop because of the weekend being a different routine or loop. The other break condition might be… death but now we’re getting philosophical, let’s stick to programming.</div>
+                <br>
+                <br>
+
+                <h2>So what is a DOM?</h2>
+                <div id="DOM"> Your browser needs to process all the HTML, CSS and Javascript to display a web document. Going one step further there is a hierarchy that browsers use to make sense of each of the code documents that make up the web document. This is where the DOM or Document Object Model comes in. This is a simplified graphic showing what the DOM might look like:
+
+                <figure>
+                    <img class="image" src="../images/DOM-model.svg" alt="Graphic showing a representation of the DOM">
+                    <figcaption>A simple graphic showing what the DOM is.</figcaption>
+                </figure>
+                
+
+                Each element such as  the head, body, divs, h1 elements are known as nodes. Every element in HTML has a type associated to it. Each of these types go off from the Node base and makes up all the nodes.
+                <br>
+                <br>
+                
+                Above the HTML node is the Document Object. Through Javascript you can make changes to the Document Object such as dynamically adding elements, removing them, animating them and setting events to elements to name a few.
+
+                <figure>
+                    <img class="image" src="../images/javascript_dom_1.png" alt="Window Object and Document Object">
+                    <figcaption>This shows what a Window Object is and what a Document Object is.
+                    </figcaption>
+                </figure>
+                
+                Above the Document Object is the Window Object. The Window Object is responsible for accessing the current URL, getting frame information, using local storage, seeing screen information, using the scrollbar and all sorts of other things that are applicable to the container that your page is shown in.</div>
+                <br>
+                <br>
+
+                <h2>Objects vs Arrays</h2>
+                <figure>
+                    <img class="image" src="../images/array-ex.png" alt="Example of an Array">
+                    <figcaption>An array can hold strings, ints, floats, and arrays.
+                    </figcaption>
+                </figure>
+                <div id="object-array"> An array is a data structure that contains data that is accessible through the index(a number starting from 0 going to the length of the array ) of the item in the array. 
+                <figure>
+                    <img class="image" src="../images/object-ex.png" alt="Example of an Object">
+                    <figcaption>Objects can also hold strings, ints, floats, and arrays. However, the values are found with a key. This is a key:value pair.
+                    </figcaption>
+                </figure>
+
+                An object is a data structure that contains data through key, value pairs. Unlike in an array, you can access the values by the key that is associated with it which is the key difference between them.</div>
+                <br>
+                <br>
+
+                <h2>Functions</h2>
+                <figure>
+                    <img class="image" src="../images/function-ex.png" alt="Example of a Function">
+                    <figcaption>A simple function that returns a small self introduction string.
+                    </figcaption>
+                </figure>
+                <div id="function"> Functions can be thought of like containers for little segments of your program. Usually a function returns a value which can then be used for other functions. Functions are useful for breaking code up into manageable and readable segments. </div>
+                <br>
+                <br>
+
+                <h2>Finally</h2>
+                <div id="conclusion"> To have a great website, an understanding of Javascript and the DOM is needed to make it interactable. Without interactivity, websites will look great but won't have the functionality needed for modern web processes like shopping carts, or sorting products. </div>
+            </div>
+
+            <div id="menu">
+                <a class="github-mark" href="https://github.com/Rae-Kwon">
+                    <img src=../images/GitHub-Mark-120px-plus.png alt="github mark" width="75px" height="75px">
+                    <div>My GitHub</div>
+                </a>
+                
+                <a class="github-logo" href="https://github.com/Rae-Kwon/Rae-Kwon.github.io">
+                    <img src="../images/GitHub_Logo.png" alt="github logo" width="125px" height="80px">
+                    <div>Source Code</div>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="footer-container">
+            <div class="footer">
+                Created by Richard Kwon
+            </div>
+        </div>
+    </body>
+</html>
