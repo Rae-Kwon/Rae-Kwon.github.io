@@ -78,6 +78,10 @@ figure {
     background-size: contain;
 }
 
+figcaption {
+    word-wrap: break-word;
+}
+
 pre {
     margin: 0; 
     line-height: 125%;
